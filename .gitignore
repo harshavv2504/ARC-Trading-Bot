@@ -1,0 +1,50 @@
+# Environment — contains real API keys, never commit
+.env
+.kite_token.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ML models (large binary files — regenerate with python -m backend.ml.train)
+backend/ml/models/
+
+# Data cache
+backend/data/cache/
+backend/data/*.parquet
+backend/data/*.csv
+
+# SQLite fallback DB (using Supabase now)
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+logs/
+
+# Frontend build output
+frontend/dist/
+frontend/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
